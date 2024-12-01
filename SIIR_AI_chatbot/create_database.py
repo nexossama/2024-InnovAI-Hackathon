@@ -35,7 +35,7 @@ def infer_sql_types(df: pd.DataFrame) -> Dict[str, str]:
 def create_database():
     """Create SQLite database and import all CSV files from the Data directory."""
     # Create a connection to the database
-    db_dir = 'SIIR.AI_chatbot'
+    db_dir = 'SIIR_AI_chatbot'
     db_path = os.path.join(db_dir, 'afcon2025.db')
     
     # Ensure the database directory exists
@@ -51,7 +51,7 @@ def create_database():
     print(f"Created new database: {db_path}")
     
     # Get all CSV files from the Data directory
-    csv_files = glob.glob('SIIR.AI_chatbot/Data/*.csv')
+    csv_files = glob.glob('SIIR_AI_chatbot/Data/*.csv')
     total_files = len(csv_files)
     
     if total_files == 0:
