@@ -35,12 +35,12 @@ model = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
 
 # Database connection
 def get_db_connection():
-    return sqlite3.connect('SIIR.AI_chatbot/afcon2025.db')
+    return sqlite3.connect('SIIR_AI_chatbot/afcon2025.db')
 
 # Retrieve the current database schema
 def get_db_schema():
     """Retrieve the current database schema."""
-    conn = sqlite3.connect('SIIR.AI_chatbot/afcon2025.db')
+    conn = sqlite3.connect('SIIR_AI_chatbot/afcon2025.db')
     cursor = conn.cursor()
     
     try:
